@@ -28,9 +28,8 @@ gulp.task('deploy', function() {
  * introduced a feature or made a backwards-incompatible release.
  */
 function inc(importance) {
-  // get all the files to bump version in
+  // bump the version number in those files
   return gulp.src(['./package.json', './bower.json'])
-    // bump the version number in those files
     .pipe(bump({type: importance}))
     .pipe(gulp.dest('./'));
 }
