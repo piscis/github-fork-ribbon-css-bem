@@ -7,7 +7,7 @@ in CSS, hence resolution-independent. There is a [demo](https://cdnjs.com/librar
 
 CDN provided by [cdnjs](https://cdnjs.com/libraries/gfr-css-bem)
 ```
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gfr-css-bem/0.1.15/gh-fork-ribbon-bem.min.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gfr-css-bem/0.1.18/gh-fork-ribbon-bem.min.css" />
 ```
 
 For more information on how to integrate with bower, webpack or NPM visit the [demo](https://cdnjs.com/libraries/gfr-css-bem)
