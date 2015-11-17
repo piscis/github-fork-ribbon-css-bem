@@ -59,5 +59,12 @@
   "bugs": {
     "url": "https://github.com/piscis/github-fork-ribbon-css-bem/issues"
   },
-  "homepage": "https://github.com/piscis/github-fork-ribbon-css-bem#readme"
+  "homepage": "https://github.com/piscis/github-fork-ribbon-css-bem#readme",
+  "npmName": "gfr-css-bem",
+  "npmFileMap": [{
+      "basePath": "dist",
+      "files": [
+        "*.css"
+      ]
+  }]
 }
