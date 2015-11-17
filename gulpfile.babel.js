@@ -43,11 +43,13 @@ gulp.task('tag', function(){
 
   const files = [
     './*',
+    './.*',
     '!./node_modules',
     '!./build',
     '!./*.iml',
     '!./*.log',
     '!./.idea',
+    '!./.git',
     '!./.publish'
   ];
 
