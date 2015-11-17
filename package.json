@@ -32,7 +32,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "node webpack.config.js",
-    "package": "webpack",
+    "package": "webpack && rm dist/gh-fork-ribbon-bem.js",
     "release:_build": "npm run package && gulp tag && gulp deploy",
     "release:_post": "git push -u origin master && git push --tags",
     "release:_publish": "npm publish",

@@ -6,6 +6,9 @@
 node_modules
 npm-debug.log
 
+# Dist
+dist/gh-fork-ribbon-bem.js
+
 # Misc
 .DS_Store
 .publish
