@@ -47,7 +47,7 @@ const webpackConfig = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('[name].css', { allChunks: true }),
+    new ExtractTextPlugin('[name].min.css', { allChunks: true }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
