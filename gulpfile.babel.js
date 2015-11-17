@@ -31,7 +31,9 @@ function inc(importance) {
   // get all the files to bump version in
   return gulp.src(['./package.json', './bower.json'])
     // bump the version number in those files
+    .pipe(filter('./package.json'))
     .pipe(bump({type: importance}))
+    .pipe(gulp.dest('./'));
     // save it back to filesystem
     //.pipe(gulp.dest('./'))
     // commit the changed version number
