@@ -1,0 +1,10 @@
+# IDE
+.idea
+*.iml
+
+# NodeJS
+node_modules
+npm-debug.log
+
+# Misc
+.DS_Store
