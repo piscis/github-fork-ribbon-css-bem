@@ -145,12 +145,29 @@
             using <a href="https://github.com/bower/bower">Bower</a>.
         </p>
         <pre>bower install gfr-css-bem</pre>
+
         <h2>Using with NPM</h2>
         <p>
           You can install the CSS files
           using <a href="https://www.npmjs.com/">NPM</a>.
         </p>
         <pre>npm install gfr-css-bem --save</pre>
+
+
+        <h2>Using with  webpack</h2>
+        <p>
+          You can use this ribbon and ship the styles with webpack by
+          requiring the SASS or CSS file during your webpack build. Make sure the appropriate
+          loader is configured and works.
+
+        </p>
+        <pre>
+# First install the npm package
+npm install gfr-css-bem --save
+
+# In your source require the CSS or SASS file e.g.
+require('gfr-css-bem/dist/gh-fork-ribbon-bem.min.css');
+        </pre>
         <!--
         <h2>Using with cdnjs</h2>
         <p>
