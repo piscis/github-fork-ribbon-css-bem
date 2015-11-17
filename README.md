@@ -7,7 +7,7 @@ in CSS, hence resolution-independent.
 
 CDN provided by [cdnjs](https://cdnjs.com/libraries/gfr-css)
 ```
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gfr-css/0.1.2/gh-fork-ribbon-bem.min.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gfr-css-bem/0.1.15/gh-fork-ribbon-bem.min.css" />
 ```
 
 See 'em in action! <https://piscis.github.io/github-fork-ribbon-css-bem/>
