@@ -1,5 +1,5 @@
 /*!
- * "Fork me on GitHub" CSS ribbon v0.1.5 | MIT License
+ * "Fork me on GitHub" CSS ribbon v0.1.6 | MIT License
  * Homepage: https://github.com/piscis/github-fork-ribbon-css-bem#readme
  * Author: Alexander Pirsig <self@pirsig.me>
  */
