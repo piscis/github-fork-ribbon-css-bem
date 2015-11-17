@@ -62,6 +62,6 @@ gulp.task('tag', function(){
 
   return gulp.src(files)
     .pipe(git.commit('bump version'))
-    .pipe(filter('package.json'))
+    .pipe(filter('./package.json'))
     .pipe(tagVersion());
 });
