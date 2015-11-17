@@ -41,6 +41,7 @@ gulp.task('release', function() { return inc('major'); });
 
 gulp.task('tag', function(){
 
+  const version = require('./package.json').version;
   const files = [
     './*',
     './.*',
@@ -54,7 +55,7 @@ gulp.task('tag', function(){
   ];
 
   return gulp.src(files)
-    .pipe(git.commit('bump version'))
+    .pipe(git.commit(`bump version ${version}`))
     .pipe(filter('package.json'))
     .pipe(tagVersion());
 });
