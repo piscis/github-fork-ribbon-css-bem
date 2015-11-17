@@ -1,6 +1,6 @@
 {
   "name": "gfr-css-bem",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "\"Fork me on GitHub\" CSS ribbon BEM style",
   "main": "dist/gh-fork-ribbon-bem.min.css",
   "dependencies": {},
