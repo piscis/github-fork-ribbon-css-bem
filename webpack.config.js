@@ -5,7 +5,7 @@ var Webpack = require('webpack');
 
 var TARGET = process.env.npm_lifecycle_event;
 
-if(TARGET === 'release') {
+if(TARGET === 'package') {
   module.exports = require('./webpack.config.production.js').default;
 } else {
 
