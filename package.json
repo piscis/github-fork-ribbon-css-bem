@@ -33,10 +33,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "node webpack.config.js",
     "package": "webpack",
-    "release:build": "npm run package && gulp tag && gulp deploy",
-    "release:patch": "gulp patch && npm run release:build",
-    "release:minor": "gulp patch && npm run release:build",
-    "release:major": "gulp patch && npm run release:build",
+    "release:_build": "npm run package && gulp tag && gulp deploy",
+    "release:_post": "git push -u origin master && git push --tags",
+    "release:_publish": "npm publish && bower register gfr-css-bem https://github.com/piscis/github-fork-ribbon-css-bem.git",
+    "release:patch": "gulp patch && npm run release:_build && npm run release:_post && npm run release:_publish",
+    "release:minor": "gulp patch && npm run release:_build && npm run release:_post && npm run release:_publish",
+    "release:major": "gulp patch && npm run release:_build && npm run release:_post && npm run release:_publish",
     "release": "npm run release:patch"
   },
   "repository": {
