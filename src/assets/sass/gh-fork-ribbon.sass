@@ -1,0 +1,135 @@
+@import 'variables'
+
+@mixin ribbonBaseStyleing()
+  // The right and left classes determine the side we attach our banner to
+  position: absolute
+
+  // Add a bit of padding to give some substance outside the "stitching"
+  padding: 2px 0
+
+  // Set the base color
+  background-color: #a00
+
+  // Set a gradient: transparent black at the top to almost-transparent black at the bottom
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))
+
+  // Add a drop shadow
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5)
+
+  // Set the font
+  font-family: $ribbonFontFamily
+  font-weight: $ribbonFontWeight
+  font-size: $ribbonFontSize
+  z-index: 9999
+  pointer-events: auto
+
+#{$compNS}__link,
+#{$compNS}__link:hover,
+#{$compNS}__link:visited
+  // Set the text properties
+  color: #fff
+  text-decoration: none
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5)
+  text-align: center
+
+  // Set the geometry. If you fiddle with these you'll also need
+  // to tweak the top and right values in .github-fork-ribbon.
+  width: 200px
+  line-height: 20px
+
+  // Set the layout properties
+  display: inline-block
+  padding: 2px 0
+
+  // Add "stitching" effect
+  border-width: 1px 0
+  border-style: dotted
+  border-color: #fff
+  border-color: rgba(255, 255, 255, 0.7)
+
+#{$compNS}__wrapper
+  width: 150px
+  height: 150px
+  position: absolute
+  overflow: hidden
+  top: 0
+  z-index: 9999
+  pointer-events: none
+
+  &--absolute
+    position: absolute !important
+
+  &--fixed
+    position: fixed !important
+
+  &--left
+    left: 0
+
+    #{$compNS}__ribbon
+      top: 42px
+      left: -43px
+      transform: rotate(-45deg)
+
+  &--right
+    right: 0
+
+    #{$compNS}__ribbon
+      top: 42px
+      right: -43px
+      transform: rotate(45deg)
+
+  &--left-bottom
+    position: fixed
+    top: inherit
+    bottom: 0
+    left: 0
+
+    #{$compNS}__ribbon
+      top: 80px
+      left: -43px
+      transform: rotate(45deg)
+
+  &--right-bottom
+    position: fixed
+    top: inherit
+    bottom: 0
+    right: 0
+
+    #{$compNS}__ribbon
+      top: 80px
+      right: -43px
+      transform: rotate(-45deg)
+
+
+#{$compNS}__ribbon
+  @include ribbonBaseStyleing()
+
+  &--red
+    background-color: #a00
+
+  &--green
+    background-color: #090
+
+  &--black
+    background-color: #333
+
+  &--orange
+    background-color: #f80
+
+  &--pink
+    background-color: #ff33cc
+
+  &--gray
+    background-color: #6D6D6D
+
+  &--white-black
+    background-color: #fff
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15))
+    box-shadow: 0 2px 3px 0 rgba(255, 255, 255, 0.3)
+
+    #{$compNS}__link,
+    #{$compNS}__link:hover,
+    #{$compNS}__link:visited
+      color: #333
+      border-color: #333
+      border-color: rgba(0, 0, 0, 0.7)

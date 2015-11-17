@@ -1,20 +1,21 @@
 {
-  "name": "github-fork-ribbon-css",
+  "name": "gfr-css-bem",
   "version": "0.1.1",
-  "homepage": "http://simonwhitaker.github.io/github-fork-ribbon-css/",
+  "homepage": "http://piscis.github.io/github-fork-ribbon-css-bem/",
   "authors": [
-    "Simon Whitaker"
+    "Alexander Pirsig"
   ],
-  "description": "\"Fork me on GitHub\" CSS ribbon",
+  "description": "\"Fork me on GitHub\" CSS ribbon BEM style",
   "main": [
-    "gh-fork-ribbon.css",
-    "gh-fork-ribbon.ie.css"
+    "./dist/gh-fork-ribbon-bem.css"
   ],
   "keywords": [
     "css",
     "fork",
     "GitHub",
-    "ribbon"
+    "ribbon",
+    "BEM",
+    "SASS"
   ],
   "license": "MIT",
   "ignore": [
