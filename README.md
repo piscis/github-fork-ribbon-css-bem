@@ -5,9 +5,9 @@ in CSS, hence resolution-independent. There is a [demo](http://piscis.github.io/
 
 ## Using "Fork me on GitHub" CSS ribbon with a CDN
 
-CDN provided by [cdnjs](https://cdnjs.com/libraries/gfr-css-bem)
+CDN provided by [rawgit.com](https://rawgit.com)
 ```
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gfr-css-bem/0.1.21/gh-fork-ribbon-bem.min.css" />
+<link rel="stylesheet" href="//cdn.rawgit.com/piscis/github-fork-ribbon-css-bem/v0.1.22/dist/gh-fork-ribbon-bem.min.css" />
 ```
 
 For more information on how to integrate with bower, webpack or NPM visit the [demo](http://piscis.github.io/github-fork-ribbon-css-bem/)
